@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:id="@id/text_category_niushi"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/textbackcategoryselect"
+    android:padding="7dp"
+    android:textSize="15sp"
+    android:text="hahh">
+
+</TextView>

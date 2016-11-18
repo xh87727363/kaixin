@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/selector_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/liear"
+        android:gravity="center"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@id/image_category_bottom"
+            android:layout_width="80dp"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/liear"
+        android:id="@id/textview_category_bottmo"
+        android:layout_marginTop="30dp"
+        android:text="fjskdlf"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/textview_category_bottmo1"
+        android:layout_below="@+id/textview_category_bottmo"
+        android:layout_marginTop="15dp"
+        android:text="fjskdlf"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/textview_category_bottmo2"
+        android:layout_below="@+id/textview_category_bottmo1"
+        android:layout_marginTop="30dp"
+        android:text="$51"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_toRightOf="@+id/textview_category_bottmo2"
+        android:layout_alignBottom="@+id/textview_category_bottmo2"
+        android:layout_alignTop="@+id/textview_category_bottmo2"
+        android:layout_below="@+id/textview_category_bottmo1"
+        android:layout_alignRight="@+id/liear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/text_like_count"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:src="@drawable/home_card_img_heart_hl"
+            android:layout_toLeftOf="@+id/text_like_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

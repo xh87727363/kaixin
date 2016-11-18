@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/textview_article_subview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:text="文章详情"/>
+    <ImageView
+        android:id="@+id/imageview_article_back_key"
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        android:src="@drawable/backkey"
+        />
+
+</RelativeLayout>

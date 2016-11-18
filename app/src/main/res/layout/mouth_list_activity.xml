@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mouth_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <include layout="@layout/article_subview_title" />
+    <com.cjj.MaterialRefreshLayout
+        android:id="@id/mouth_list_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+                <ListView
+                    android:id="@id/listview_mouth_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_mouth_list">
+
+                </ListView>
+    </com.cjj.MaterialRefreshLayout>
+</LinearLayout>

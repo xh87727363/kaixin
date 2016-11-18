@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kaixin.com.qingdan">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:name=".utils.http.QinDanappliction"
+        android:allowBackup="true"
+        android:icon="@drawable/list"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".gui.Activity.Welcome"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.Activity.Guide">
+            <intent-filter android:autoVerify="true">
+                <action android:name=".gui.activity.guide"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.Activity.MainActivity"></activity>
+        <activity android:name=".gui.fragment.ArticleDetailActivity"></activity>
+        <activity android:name=".gui.fragment.ArticleCollectionActivity"></activity>
+        <activity android:name=".gui.Activity.Mouth_list_Activity"></activity>
+        <activity android:name=".gui.Activity.MouthDestirsActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".gui.Activity.CategoryShopDetailes"></activity>
+        <activity android:name=".gui.Activity.AllCategoryActivity"></activity>
+    </application>
+
+</manifest>

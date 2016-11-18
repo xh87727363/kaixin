@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@id/root_daily_tips"
+    android:background="#b3000000"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="270dp"
+        android:layout_height="480dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="fitXY"
+        android:id="@id/img_daily_tips"/>
+    <LinearLayout
+        android:layout_below="@id/img_daily_tips"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_wechat"/>
+        <ImageView
+            android:id="@id/img_btn_moments"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:scaleType="centerInside"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_dailytips_moments"/>
+        <ImageView
+            android:id="@id/img_btn_download"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_download"/>
+
+    </LinearLayout>
+        <ImageView
+            android:id="@id/img_btn_off"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@id/img_daily_tips"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_dailytips_off"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+</RelativeLayout>

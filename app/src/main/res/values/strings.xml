@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mylist</string>
+    <string name="noMoreData">没有更多数据了</string>
+    <string name="like_count">喜欢(%1$d)</string>
+    <string name="commentCount">评论(%1$d)</string>
+    <string name="reviewCount">点评数 %1$d</string>
+    <string name="shopNum">商品数 %1$d</string>
+    <string name="scre_reic">%1$s分（%2$d人点评）</string>
+    <string name="cancel">取消</string>
+</resources>

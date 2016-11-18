@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@id/linear_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/article_subview_title"/>
+    <LinearLayout
+        android:background="@drawable/home_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="#f1e7e7"
+            android:layout_marginTop="15dp"
+            android:id="@id/all_category_recycle_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+        <ScrollView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@id/cantion_linear"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

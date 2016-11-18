@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <kaixin.com.qingdan.gui.view.AutoScrollViewPager
+        android:id="@id/viewPager_main_list_slide"
+        android:layout_width="match_parent"
+        android:layout_height="240.0dp"/>
+    <LinearLayout
+        android:id="@id/linearLayout_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30.0dp"
+        android:layout_alignBottom="@id/viewPager_main_list_slide"
+        android:layout_marginBottom="7.0dp"
+        android:layout_marginTop="10.0dp"
+        android:gravity="center"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>
