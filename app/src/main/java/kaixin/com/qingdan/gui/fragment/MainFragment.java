@@ -2,6 +2,7 @@ package kaixin.com.qingdan.gui.fragment;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -25,6 +26,7 @@ import butterknife.OnClick;
 import kaixin.com.qingdan.R;
 import kaixin.com.qingdan.entity.ResponseBatching;
 import kaixin.com.qingdan.entity.ResponseDailyTips;
+import kaixin.com.qingdan.gui.Activity.AllCategoryActivity;
 import kaixin.com.qingdan.gui.adapter.MainSlidePagerAdapter;
 import kaixin.com.qingdan.gui.adapter.MainTabLayoutAdapter;
 import kaixin.com.qingdan.gui.widget.IndicatorContainer;
@@ -177,6 +179,8 @@ public class MainFragment extends FragmentBase implements MainView {
                 Toast.makeText(getContext(), "开始下载", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.img_title_right:
+                Intent intent = new Intent(getContext(), AllCategoryActivity.class);
+                startActivity(intent);
                 break;
         }
     }
